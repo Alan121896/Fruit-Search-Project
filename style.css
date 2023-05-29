@@ -38,7 +38,6 @@ background: linear-gradient(to left, #f5e12bb4, #a85700a1 );
 .search-container .suggestions {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: black;
-  border: black, 2px, solid;
 }
 
 .search-container .suggestions {
@@ -63,7 +62,7 @@ ul li {
   text-align: center;
   padding: 8px 12px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .highlighted {
