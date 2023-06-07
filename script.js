@@ -9,7 +9,6 @@ function search(str) {
 	if(str.length > 0){
 		results = fruit.filter(item => item.toLowerCase().includes(str.toLowerCase()));
 	}
-
 	return results;
 }
 
@@ -27,7 +26,7 @@ function showSuggestions(results, inputVal) {
 	}
 	for(let result of results){
 		const li =document.createElement('li');
-		li.textContent = result;
+		li.innerHTML = result.replace(inputVal, `<strong>${inputVal}</strong>`);
 		li.addEventListener('mouseover', () => highlightSuggestion(li));
 		suggestions.appendChild(li);
 	}
